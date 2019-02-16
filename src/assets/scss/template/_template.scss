@@ -41,11 +41,18 @@ p{
 
 table.button {
 	table td {
+    border: none !important;
 		a {
       font-family: $font-family-condensed !important;
       letter-spacing: 2px;
       font-size: 13px !important;
       font-weight: 400 !important;
+      transition: all .4s ease-out;
+      border: 2px solid $black !important;
+		}
+		a:hover {
+      background: $white;
+      color: $black !important;
 		}
 	}
 }
