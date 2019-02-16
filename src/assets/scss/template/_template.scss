@@ -3,6 +3,7 @@
 
 // Body Styles
 $font-family-common: "Roboto", Helvetica, Arial, sans-serif;
+$font-family-condensed: "Roboto Condensed", Helvetica, Arial, sans-serif;
 
 body,
 html, 
@@ -23,4 +24,17 @@ html,
 
 h1{
   font-family: $font-family-common;
+}
+
+
+.header-left{
+  padding-bottom: 10px !important;
+}
+.main-navigation{
+  min-width: 100%;
+  a{
+    font-family: $font-family-condensed !important;
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
 }
