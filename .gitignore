@@ -6,3 +6,7 @@ bower_components
 .awspublish*
 config.json
 .cs.html
+
+src/pages/index\.cs\.html
+
+dist/index\.cs\.html
