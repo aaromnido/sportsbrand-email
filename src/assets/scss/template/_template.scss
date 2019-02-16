@@ -6,6 +6,8 @@ $font-family-common: "Roboto", Helvetica, Arial, sans-serif;
 $font-family-condensed: "Roboto Condensed", Helvetica, Arial, sans-serif;
 $font-family-bolder: "Open Sans", Helvetica, Arial, sans-serif;
 
+$mobile-viewport: 450px;
+
 body,
 html, 
 .body {
@@ -13,7 +15,7 @@ html,
 }
 .fluid-container{
   width: 100% !important;
-  min-width: 100% !important;
+  max-width: 100% !important;
 }
 
 a{
@@ -51,6 +53,16 @@ p{
 
 .hide-for-large{
   display: none !important;
+}
+
+.no-wrapp{
+  display: block;
+}
+
+@media only screen and (max-width: $mobile-viewport) {
+  .no-wrapp-for-small{
+    display: block;
+  }
 }
 
 table.button {
@@ -155,7 +167,7 @@ table.button {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: $mobile-viewport) {
   .main-navigation{
     a{
       margin: 0 3% !important;
@@ -216,5 +228,27 @@ table.button {
 .best-of-adidas{
   p{
     font-size: 14px;
+  }
+}
+
+.world{
+  border-top: 1px solid $black;
+  border-bottom: 1px solid $black;
+
+  a{
+    font-family: $font-family-condensed;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 800;
+  }
+  .claim{
+    font-size: 32px;
+    font-family: $font-family-common;
+  }
+
+  @media only screen and (max-width: $mobile-viewport) {
+    .claim{
+      font-size: 22px !important;
+    }
   }
 }
