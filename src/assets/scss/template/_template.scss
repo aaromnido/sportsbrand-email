@@ -56,4 +56,28 @@ h1{
     font-size: 15px;
   }
 }
+.main-navigation{
+  padding: 0 !important;
+  padding-bottom: 10px !important;
+  th{
+    text-align: center !important;
+  }
+  a{
+    margin: 0 5.8% !important;
+  }
+  a:first-child{
+    margin-left: 0 !important;
+  }
+  a:last-child{
+    margin-right: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .main-navigation{
+    a{
+      margin: 0 3% !important;
+    }
+  }
+}
 
