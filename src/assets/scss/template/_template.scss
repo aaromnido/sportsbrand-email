@@ -237,7 +237,7 @@ table.button {
 
 .world{
   border-top: 1px solid $black;
-  border-bottom: 1px solid $black;
+  border-bottom: 1px solid transparentize($black, 0.6);
 
   a{
     font-family: $font-family-condensed;
@@ -257,7 +257,7 @@ table.button {
   }
 }
 .social{
-  border-bottom: 1px solid $black;
+  border-bottom: 1px solid transparentize($black, 0.6);
   .social-menu{
     text-align: center !important;
   }
@@ -285,5 +285,8 @@ table.button {
 .footer{
   a small{
     color: $black !important;
+  }
+  a:hover small{
+    color: $white !important;
   }
 }
