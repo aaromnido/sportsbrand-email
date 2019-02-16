@@ -133,7 +133,11 @@ table.button {
     color: $black;
   }
 }
-
+.header{
+  .logo{
+    width: 70px !important;
+  }
+}
 .header-left{
   padding-bottom: 10px !important;
 }
