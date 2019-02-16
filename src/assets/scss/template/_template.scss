@@ -132,6 +132,13 @@ table.button {
     font-weight: light;
     color: $black;
   }
+  a{
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  a:hover small{
+    color: $white !important;
+  }
 }
 .header{
   .logo{
