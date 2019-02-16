@@ -2,6 +2,34 @@
 subject: My Email Templates
 ---
 
+<container class="top-header">
+  <row class="collapse">
+    <columns small="12" large="6">
+      <spacer size="20"></spacer>
+      <small class="small-text show-for-large">Snippet copyline</small>
+    </columns>
+    <columns small="12" large="6" class="top-header-right show-for-large">
+      <spacer size="20"></spacer>
+      <a href="#" class="text-right">
+        <small>View this email online</small>
+      </a>
+    </columns>
+    <columns small="12" large="6" class="hide-for-large">
+      <a href="#">
+        <small>View this email online</small>
+        <spacer size="20"></spacer>
+      </a>
+    </columns>
+  </row>
+  <!--
+    <row class="hide-for-large">
+      <a href="#">
+        <small>View this email online</small>
+      </a>
+    </row>
+  -->
+</container>
+
 <table class="fluid-container black">
   <tr>
     <td>
@@ -12,7 +40,7 @@ subject: My Email Templates
           </columns>
           <columns large="10" valign="bottom" style="padding-bottom: 0" class="collapse text-center">
             <center>
-              <menu class="main-navigation">
+              <menu class="main-navigation collapse">
                 <item href="#">MEN</item>
                 <item href="#">WOMEN</item>
                 <item href="#">KIDS</item>
