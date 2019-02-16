@@ -108,6 +108,11 @@ table.button {
     font-family: $font-family-condensed !important;
     letter-spacing: 1px;
     font-size: 15px;
+    border-bottom: 2px solid transparent;
+    transition: all .4s ease-out;
+  }
+  a:hover{
+    border-bottom: 2px solid $white;
   }
 }
 .main-navigation{
