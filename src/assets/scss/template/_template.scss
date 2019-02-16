@@ -4,6 +4,7 @@
 // Body Styles
 $font-family-common: "Roboto", Helvetica, Arial, sans-serif;
 $font-family-condensed: "Roboto Condensed", Helvetica, Arial, sans-serif;
+$font-family-bolder: "Open Sans", Helvetica, Arial, sans-serif;
 
 body,
 html, 
@@ -26,12 +27,65 @@ a{
   color: white !important;
 }
 
-h1{
+h1, p{
   font-family: $font-family-common;
+}
+p{
+  font-weight: 300;
+  line-height: 1.6rem;
 }
 
 .hide-for-large{
   display: none !important;
+}
+
+table.button {
+	table td {
+		a {
+      font-family: $font-family-condensed !important;
+      letter-spacing: 2px;
+      font-size: 13px !important;
+      font-weight: 400 !important;
+		}
+	}
+}
+
+.button-icon-outline{
+  display: inline-block !important;
+  border: 2px solid $black !important;
+  color: $black !important;
+  background: $white;
+  width: 28px;
+  height: 28px;
+  line-height: 22px;
+  text-align: center;
+  border-radius: 100px;
+  font-size: 26px !important;
+  transition: all .4s ease-out;
+}
+.button-icon-outline:hover{
+  color: $white !important;
+  background: $black !important;
+}
+.product-picture{
+  position: relative;
+  .button-icon-outline{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+  }
+  &.product-01 .button-icon-outline{
+    top:4%;
+    left: 17%;
+  }
+  &.product-02 .button-icon-outline{
+    top:2%;
+    left: 8%;
+  }
+  &.product-03 .button-icon-outline{
+    top:23%;
+    left: 52%;
+  }
 }
 
 .top-header-right *{
@@ -81,3 +135,25 @@ h1{
   }
 }
 
+.hero{
+  .text-center *{
+    text-align: center !important;
+  }
+  img{
+    display: inline-block !important;
+  }
+  .title{
+    font-family: $font-family-bolder;
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
+  .code{
+    display: inline-block;
+    font-family: $font-family-condensed;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid $black;
+  }
+}
