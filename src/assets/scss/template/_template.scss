@@ -2,12 +2,25 @@
 // Feel free to remove these styles for production!
 
 // Body Styles
+$font-family-common: "Roboto", Helvetica, Arial, sans-serif;
 
 body,
 html, 
 .body {
   background: $white !important;
 }
-.container.header {
-  background: $white !important;
+.fluid-container{
+  width: 100% !important;
+  min-width: 100% !important;
+}
+
+.black{
+  background: black !important;
+}
+.black * {
+  color: white !important;
+}
+
+h1{
+  font-family: $font-family-common;
 }
