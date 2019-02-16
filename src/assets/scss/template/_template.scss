@@ -252,3 +252,28 @@ table.button {
     }
   }
 }
+.social{
+  border-bottom: 1px solid $black;
+  .social-menu{
+    text-align: center !important;
+  }
+  a.social-link {
+    display: inline-block;
+    border: none;
+    margin: 0 6%;
+    float: none !important;
+  }
+
+  a.social-link-first {
+    margin-left: 0 !important;
+  }
+  
+  a.social-link-last {
+    margin-right: 0 !important;
+  }
+  @media only screen and (max-width: $mobile-viewport) {
+    .social-link{
+      margin: 2% !important;
+    }
+  }
+}
